@@ -35,11 +35,8 @@ public class Tutorial6 {
                     special = true;
                 }
             }
-            if (upChar == true && lowChar == true && digit == true && special == true) {
-                System.out.println("Your password is Strong!");
-            } else {
-                System.out.println("Your password is Weak!");
-            }
+            System.out.println(
+                    (upChar && lowChar && digit && special) ? "Your password is Strong!" : "Your password is Weak!");
         }
     }
 }

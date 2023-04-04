@@ -13,8 +13,8 @@ public class Tutorial5 {
         input.close();
         String userChoice = (userInput == 0) ? "rock"
                 : ((userInput == 1) ? "paper" : ((userInput == 2) ? "scissor" : "Invalid Choice"));
-        System.out.println("You choose " + userChoice);
-        if (userChoice.equals("rock") || userChoice.equals("paper") || userChoice.equals("scissor")) {
+        System.out.println("You choose : " + userChoice);
+        if (userInput == 0 || userInput == 1 || userInput == 2) {
             // Random number from computer
             Random random = new Random();
             // random number less than 3 ( 0, 1 , 2 )
