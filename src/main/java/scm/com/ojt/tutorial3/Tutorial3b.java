@@ -18,13 +18,9 @@ public class Tutorial3b {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter element you want to remove.");
         int rmVar = input.nextInt();
-
-        for (int i = 0; i < arrObj.size(); i++) {
-            if (arrObj.get(i) == rmVar) {
-                arrObj.remove(i);
-            }
-        }
+        input.close();
+        // Build in method in array list to remove an element by value
+        arrObj.remove(Integer.valueOf(rmVar));
         System.out.println("After Removing " + arrObj);
     }
-
 }

@@ -21,10 +21,9 @@ public class Tutorial4b {
         int firstIndex = input.nextInt();
         System.out.print("Enter index number of 2nt element to swap : ");
         int secondIndex = input.nextInt();
+        input.close();
         // use static method swap from collection class to swap
         Collections.swap(colorObj, firstIndex, secondIndex);
         System.out.println("After Swapping : " + colorObj);
-
     }
-
 }

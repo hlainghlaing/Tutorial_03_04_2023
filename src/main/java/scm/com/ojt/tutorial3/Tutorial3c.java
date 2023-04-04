@@ -13,12 +13,9 @@ public class Tutorial3c {
         arrList.add("PHP");
         arrList.add("C#");
         arrList.add("Ruby");
-
         System.out.println("Array List : " + arrList);
-
         String arr[] = new String[arrList.size()];
         arr = arrList.toArray(arr);
         System.out.print("Array : " + Arrays.toString(arr));
     }
-
 }

@@ -8,8 +8,12 @@ public class Tutorial5 {
     public static void main(String[] args) {
         // Ask input from user
         Scanner input = new Scanner(System.in);
-        System.out.print("Make your choice ( rock, paper , scissor) : ");
-        String userChoice = input.nextLine();
+        System.out.print("Make your choice ( 0:rock, 1:paper , 2:scissor) : ");
+        int userInput = input.nextInt();
+        input.close();
+        String userChoice = (userInput == 0) ? "rock"
+                : ((userInput == 1) ? "paper" : ((userInput == 2) ? "scissor" : "Invalid Choice"));
+        System.out.println("You choose " + userChoice);
         if (userChoice.equals("rock") || userChoice.equals("paper") || userChoice.equals("scissor")) {
             // Random number from computer
             Random random = new Random();
@@ -35,7 +39,6 @@ public class Tutorial5 {
             System.out.println("Invalid Choice! Let's play again .");
             System.out.println("Enter Right Choice next time.");
         }
-
     }
 
     private static boolean playerWin(String userChoice, String computerChoice) {
@@ -47,5 +50,4 @@ public class Tutorial5 {
             return computerChoice.equals("paper");
         }
     }
-
 }

@@ -1,5 +1,7 @@
 package scm.com.ojt.tutorial3;
 
+import java.util.Arrays;
+
 public class Tutorial3a {
 
     public static void main(String[] args) {
@@ -10,7 +12,6 @@ public class Tutorial3a {
             sum = sum + i;
         }
         double avgValue = (double) sum / arrayObj.length;
-        System.out.println("Average : " + avgValue);
+        System.out.println("Average of an array " + Arrays.toString(arrayObj) + " is " + avgValue);
     }
-
 }

@@ -17,7 +17,7 @@ public class Tutorial4a {
             System.out.print("Enter elements in array index " + i + " : ");
             arrList.add(input.nextLine());
         }
+        input.close();
         System.out.println("An Array List you created : " + arrList);
     }
-
 }

@@ -8,14 +8,10 @@ public class Tutorial2a {
         Scanner input = new Scanner(System.in);
         System.out.print("Input Number : ");
         int number = input.nextInt();
-        if (number > 0) {
-            System.out.println("Number is positive.");
-        } else if (number < 0) {
-            System.out.println("Number is Negative.");
-        } else {
-            System.out.println("Number 0 is neither positive nor negative.");
-        }
-
+        input.close();
+        // Ternary Operator with multiple conditions:
+        String result = (number == 0) ? "Number 0 is neither positive nor negative."
+                : ((number > 0) ? "Number is positive." : "Number is negative");
+        System.out.println(result);
     }
-
 }

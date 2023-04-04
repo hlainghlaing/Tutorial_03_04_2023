@@ -3,7 +3,6 @@ package scm.com.ojt.tutorial1;
 public class NumberPattern {
 
     public static void main(String[] args) {
-
         for (int r = 7; r > 0; r--) {
             for (int i = 1; i < 8 - r; i++) {
                 System.out.print(" ");
@@ -13,7 +12,6 @@ public class NumberPattern {
             }
             System.out.println();
         }
-
         for (int r = 2; r < 8; r++) {
             for (int i = 1; i < 8 - r; i++) {
                 System.out.print(" ");
@@ -23,7 +21,5 @@ public class NumberPattern {
             }
             System.out.println();
         }
-
     }
-
 }

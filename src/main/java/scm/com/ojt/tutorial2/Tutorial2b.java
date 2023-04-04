@@ -13,14 +13,9 @@ public class Tutorial2b {
         int secondNum = input.nextInt();
         System.out.print("Input the 3rd number : ");
         int thirdNum = input.nextInt();
-
-        if (firstNum >= secondNum && firstNum >= thirdNum) {
-            System.out.println("The greatest : " + firstNum);
-        } else if (secondNum >= firstNum && secondNum >= thirdNum) {
-            System.out.println("The greatest : " + secondNum);
-        } else {
-            System.out.println("The greatest : " + thirdNum);
-        }
+        input.close();
+        int result = (firstNum >= secondNum && firstNum >= thirdNum) ? firstNum
+                : ((secondNum >= firstNum && secondNum >= thirdNum) ? secondNum : thirdNum);
+        System.out.println("The greatest : " + result);
     }
-
 }
